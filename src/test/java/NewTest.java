@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import FirstPackage.FirstClass;
 
 public class NewTest {
-  @Test
+  @Test (invocationCount = 2)
   public void Test1()
   
   {
