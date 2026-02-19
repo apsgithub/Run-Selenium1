@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import FirstPackage.FirstClass;
 
 public class NewTest {
-  @Test (invocationCount = 2)
+  @Test
   public void Test1()
   
   {
@@ -17,7 +17,7 @@ public class NewTest {
 		System.out.println(driver.getCurrentUrl());
   }
   
-  @Test (enabled=false)
+  @Test (dependsOnMethods="Test3")
   public void Test2()
   {
 	  WebDriver driver = new ChromeDriver();
