@@ -18,10 +18,10 @@ public class NewTest {
   }
   
   @Test (dependsOnMethods="Test3")
-  public void Test2()
+  public void Test4()
   {
 	  WebDriver driver = new ChromeDriver();
-		driver.get("https://www.yahoo.com");
+		driver.get("https://www.yahoo.com ");
   }
 		  
   @Test
